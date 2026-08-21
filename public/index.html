@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>B 站互动数据抓取</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <header class="topbar">
+          <div class="brand">
+            <div class="logo">B</div>
+            <div>
+              <h1>B 站互动数据抓取</h1>
+              <p>粘贴视频链接，直接返回点赞、收藏、评论、转发和总和。</p>
+            </div>
+          </div>
+          <div class="top-actions">
+            <div class="metric-chip">
+              <span>互动项</span>
+              <strong>4</strong>
+            </div>
+            <div class="badge">Local</div>
+          </div>
+        </header>
+
+        <section class="intro">
+          <div>
+            <span class="eyebrow">Bilibili Data Assistant</span>
+            <h2>把链接丢进来，互动数据马上成表</h2>
+            <p>粘贴视频链接，直接返回点赞、收藏、评论、转发和总和。</p>
+          </div>
+          <div class="quick-stats" aria-label="抓取字段">
+            <span>点赞</span>
+            <span>收藏</span>
+            <span>评论</span>
+            <span>转发</span>
+          </div>
+        </section>
+
+        <section class="chat" id="chat">
+          <article class="message assistant">
+            <div class="avatar">B</div>
+            <div class="bubble">把 B 站视频链接发给我，一行一个或直接整段粘贴都可以。我会把结果整理成表格，并给你 CSV 下载。</div>
+          </article>
+        </section>
+
+        <form class="composer" id="form">
+          <textarea
+            id="input"
+            rows="4"
+            placeholder="https://www.bilibili.com/video/BV1U6gF63EYE/"
+          ></textarea>
+          <div class="actions">
+            <button type="button" class="secondary" id="example">填入示例</button>
+            <button type="submit" id="submit">抓取数据</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
